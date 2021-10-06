@@ -6,5 +6,6 @@ const SECRET_KEY = "bXlTZWNyZXRQYXNzd29yZG15U2VjcmV0UGFzc3dvcmQK"
 module.exports = {
     API_VERSION,
     IP_SERVER,
-    PORT_DB
+    PORT_DB,
+    SECRET_KEY
 }
