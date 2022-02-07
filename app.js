@@ -12,6 +12,7 @@ const authRoutes = require("./routers/auth")
 const menuRoutes = require("./routers/menu")
 const newsletterRoutes = require("./routers/newsletter")
 const coursesRoutes = require("./routers/courses")
+const postRoutes = require("./routers/post")
 
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
@@ -34,5 +35,6 @@ app.use(`/api/${API_VERSION}`, authRoutes)
 app.use(`/api/${API_VERSION}`, menuRoutes)
 app.use(`/api/${API_VERSION}`, newsletterRoutes)
 app.use(`/api/${API_VERSION}`, coursesRoutes)
+app.use(`/api/${API_VERSION}`, postRoutes)
 
 module.exports = app;
